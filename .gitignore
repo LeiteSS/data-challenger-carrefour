@@ -1,0 +1,16 @@
+# Environment Variables
+.env
+docker/.env
+
+# Docker Ignore
+docker/.dockerignore
+
+# MongoDb Folders
+docker/data
+docker/.docker/
+
+# Checkpoints
+.ipynb_checkpoints
+
+# Caches
+modules/__pycache__
