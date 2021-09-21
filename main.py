@@ -30,6 +30,7 @@ username = mongoEnv.key_mongo['mongo_username']
 pwd = mongoEnv.key_mongo['mongo_password']
 
 def main():
+  print("****************************DATA CHALLENGE CARREFOUR***********************************")
   # Se autenticando ao Twitter API e se conectando ao endpoint
   oauth = ta.TwitterAuth(bearer_token)
   top_trends = oauth.connect_to_endpoint(search_url, query_params)
