@@ -8,14 +8,14 @@ from textblob import TextBlob
 
 class TwitterClient(object):
 
-  def __init__(self):
+  def __init__(self, consumer_key, consumer_secret, access_token, access_token_secret):
       '''
       Construtor da classe TwitterClient
       '''
-      consumer_key = os.getenv('TWITTER_API_KEYS')
-      consumer_secret = os.getenv('TWITTER_API_KEY_SECRET')
-      access_token = os.getenv('TWITTER_ACCESS_TOKEN')
-      access_token_secret = os.getenv('TWITTER_ACCESS_TOKEN_SECRET')
+      self.consumer_key = consumer_key
+      self.consumer_secret = consumer_secret
+      self.access_token = access_token
+      self.access_token_secret = access_token_secret
 
       # Tentar autenticação
       try:
